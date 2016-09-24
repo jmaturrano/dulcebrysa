@@ -9,47 +9,31 @@
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
  * @package dazzling
+
+
+
  */
 
-get_header(); ?>	
+get_header(); ?>
 
-<div class="top-section">
+ <div class="top-section">
     <div class="container">
         <div class="row">
             <?php mksystem_featured_slider(); ?>
         </div><!--.row-->
     </div><!--.container-->
-</div>
+</div>	
 
-
-        <div id="primary" class="content-area col-sm-12 col-md-8">
+        <div id="primary" class="content-area col-sm-12 col-md-12">
                 <main id="main" class="site-main" role="main">
 
-                <?php if ( have_posts() ) : ?>
+                   <h2 class="texto-evento1 text-center">Organizacion de Eventos</h2>
+                   <h5 class="texto-evento2 text-center">Nuestro servicio de catering ofrece propuestas especificas para la realización de eventos de empresa.Nos adaptamos a la necesidad del cliente</h5>
 
-                        <?php /* Start the Loop */ ?>
-                        <?php while ( have_posts() ) : the_post(); ?>
-
-                                <?php
-                                        /* Include the Post-Format-specific template for the content.
-                                         * If you want to override this in a child theme, then include a file
-                                         * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-                                         */
-                                        get_template_part( 'content', get_post_format() );
-                                ?>
-
-                        <?php endwhile; ?>
-
-                        <?php dazzling_paging_nav(); ?>
-
-                <?php else : ?>
-
-                        <?php get_template_part( 'content', 'none' ); ?>
-
-                <?php endif; ?>
 
                 </main><!-- #main -->
         </div><!-- #primary -->
-
+<?php get_template_part( 'content', 'pgeventos' ); ?>
+<?php get_template_part( 'content', 'pgeventos2' ); ?>
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

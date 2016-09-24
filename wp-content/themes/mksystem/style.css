@@ -17,3 +17,67 @@ Aquí empieza la personalización del tema
 ---------------------------------------------------------------------------------
 */
 
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus, .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus, .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus{
+    background-color: #ffffff;
+    color: #000;
+}
+.texto-evento1{
+	color:#000
+
+}
+.texto-evento2{
+	color:#000;
+}
+
+.mk-eventos img{
+max-width: 29% !important ;
+padding: 10px;
+}
+
+.mk-eventos-1{
+padding: 6px 6px 30px;
+background: #212121;
+}
+
+
+.mk-eventos-2{
+padding: 6px 6px 30px;
+background: #3f3d40;
+
+}
+
+
+
+
+.mk-eventos2 img{
+
+max-width: 80% !important;
+padding-top: 73px;
+}
+
+
+.text-event1{
+padding-top: 73px;
+color:#000;
+}
+
+
+.text-event2{
+color:#000;
+}
+
+#colophon {
+    line-height: 39px;
+    padding-top:40px;
+    padding-bottom:22px;
+
+}
+.footermk h6{
+	color:#fff !important;
+}
+
+
+.scroll-to-top{
+ background-color: #0e7add !important;
+ background-image: linear-gradient(to bottom, #1fc4f0, #0e7add);
+}
