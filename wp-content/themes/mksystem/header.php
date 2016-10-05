@@ -22,10 +22,19 @@
 </head>
 
 <body <?php body_class(); ?>>
+	  
 <div id="page" class="hfeed site">
-
 	<nav class="navbar navbar-default" role="navigation">
+			<div class="texto-cabecera">
+						<span >
+							<?php if ( get_theme_mod('texto_cabecera', '') != '' ){ ?>
+	                        <?php echo  get_theme_mod('texto_cabecera', ''); ?>
+	                        <?php } ?>
+						</span>
+			  		</div>
+
 		<div class="container">
+			
 			<div class="navbar-header">
 			  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
 			    <span class="sr-only"><?php _e( 'Toggle navigation', 'dazzling' ); ?></span>
@@ -59,7 +68,7 @@
 				<?php dazzling_header_menu(); ?>
 		</div>
 	</nav><!-- .site-navigation -->
-
+ <?php mksystem_featured_slider(); ?>
         <div class="top-section">
 		<?php dazzling_featured_slider(); ?>
 		<?php dazzling_call_for_action(); ?>

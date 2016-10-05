@@ -47,3 +47,49 @@ function mksystem_featured_slider() {
       echo ' </div>';
     // }
 }
+function mksystem_header_styles() {
+?>
+  <style type="text/css">
+    .navbar-mksystem{
+      /*background: #FFC700; */
+      background: <?php echo get_theme_mod('color_mksystem_theme'); ?>;
+    }
+    .navbar-mksystem a{
+      color: #000; 
+    }
+    
+    }
+  </style>
+<?php
+}
+add_action( 'wp_enqueue_scripts', 'mksystem_header_styles' );
+function mksystem_customizer_register( $wp_customize ) {
+
+  /*
+  *
+  * Contactos
+  *
+  */
+  
+  $wp_customize->add_section(
+        'mksystem_contacto',
+        array(
+            'title' => __('Contactos', 'mksystem'),
+            'priority' => 100
+        )
+    );
+   $wp_customize->add_setting('texto_cabecera',array(
+    'default' => __('Texto por defecto','mksystem')
+  ));
+  $wp_customize->add_control('texto_cabecera',array(
+    'label' => __('Texto de Cabecera','mksystem'),
+    'section' => 'mksystem_contacto',
+    'setting' => 'texto_cabecera',
+    'type'    => 'textarea'
+  ));
+
+
+}
+
+
+add_action('customize_register','mksystem_customizer_register');
