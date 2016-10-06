@@ -65,11 +65,17 @@ color:#000;
     padding-bottom:22px;
 
 }
-.texto-cabecera {
-	color: #FFF!important;
-	background: #000;
-    font-weight: normal;
-    margin-bottom: 0;
-    margin-top: -2px;
-    padding-top: 5px;
+
+.footermk h6{
+    color:#fff !important;
+}
+
+.scroll-to-top{
+ background-color: #0e7add !important;
+ background-image: linear-gradient(to bottom, #1fc4f0, #0e7add);
+}
+
+.texto-cabecera{
+color:#ffffff;
+background-color: #000000;
 }

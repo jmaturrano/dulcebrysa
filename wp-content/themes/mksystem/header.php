@@ -26,11 +26,7 @@
 <div id="page" class="hfeed site">
 	<nav class="navbar navbar-default" role="navigation">
 			<div class="texto-cabecera">
-						<span >
-							<?php if ( get_theme_mod('texto_cabecera', '') != '' ){ ?>
-	                        <?php echo  get_theme_mod('texto_cabecera', ''); ?>
-	                        <?php } ?>
-						</span>
+							<span> AV JOSE PARDO Nº 620 – OFICINA 13 (PRIMER PISO) DEL C.C. LATINO </span>
 			  		</div>
 
 		<div class="container">
