@@ -1,13 +1,12 @@
 <?php
 /**
+ * The template used for displaying page content in page-servicios.php
+ *
  * @package dazzling
  */
 ?>
 
-CONTENT INDEX
-
-
-
+content servicio
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <header class="entry-header page-header">
         <h1 class="entry-title"><?php the_title(); ?></h1>
