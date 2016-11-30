@@ -16,7 +16,7 @@ get_header(); ?>
 
           
 
-EL INDEX
+INDEX .php
 
 
   <div id="primary" class="content-area col-sm-12 col-md-12">

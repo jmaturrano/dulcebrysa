@@ -8,7 +8,16 @@
  */
 
 get_header(); ?>
-pageee
+
+
+        <div class="top-section">
+		<?php devit_featured_slider(); ?>
+		</div>
+
+		
+
+page-principal
+
 	<div id="primary" class="content-area col-sm-12 col-md-12">
 		<main id="main" class="site-main" role="main">
 

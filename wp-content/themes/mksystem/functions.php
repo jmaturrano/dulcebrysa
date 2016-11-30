@@ -7,9 +7,9 @@
 
 
 /**
- * Mk system slider
+ * Mk system slider no sirve 
  */
-function mksystem_featured_slider() {
+function mksystem_featured_slider1() {
     if(get_theme_mod('devit_slider_checkbox')):
       echo '<div class="flexslider">';
         echo '<ul class="slides">';
@@ -44,6 +44,15 @@ function mksystem_featured_slider() {
       echo ' </div>';
   endif;
 }
+add_action('featured_slider','mksystem_featured_slider');
+
+/**
+ * FIN Mk system slider no sirve 
+ */
+
+
+
+
 function mksystem_header_styles() {
 ?>
   <style type="text/css">
@@ -63,7 +72,69 @@ add_action( 'wp_enqueue_scripts', 'mksystem_header_styles' );
 
 
 
+
+
+
+
+
+
+
+
+
+
 function mksystem_customizer_register( $wp_customize ) {
+
+
+/* Slider main */
+  $wp_customize->add_section('devit_slider_options', array(
+      'title' => __('Slider', 'dazzling'),
+      'priority' => 31
+  ));
+  $wp_customize->add_setting( 'devit_slider_checkbox', array(
+          'default' => 0
+  ) );
+  $wp_customize->add_control( 'devit_slider_checkbox', array(
+          'label' => 'Habilitar slider?',
+          'section' => 'devit_slider_options',
+          'priority'  => 5,
+          'type'      => 'checkbox',
+  ) );
+  global $options_categories;
+  $wp_customize->add_setting('devit_slide_categories', array(
+      'default' => ''
+  ));
+  $wp_customize->add_control('devit_slide_categories', array(
+      'label' => 'Slider Categoría',
+      'section' => 'devit_slider_options',
+      'type'    => 'select',
+      'description' => 'Seleccione una categoría para las imágenes del slider',
+      'choices'    => $options_categories
+  ));
+  $wp_customize->add_setting('devit_slide_number', array(
+      'default' => 3
+  ));
+  $wp_customize->add_control('devit_slide_number', array(
+      'label' => 'Número de items',
+      'section' => 'devit_slider_options',
+      'description' => 'Ingrese el número de sliders',
+      'type' => 'text'
+  ));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   /*
   *
@@ -318,16 +389,47 @@ function mksystem_customizer_register( $wp_customize ) {
 
 
 
-
-
-
-
-
-
-
-
-
 }
 
 
 add_action('customize_register','mksystem_customizer_register');
+
+
+/**
+ * slider main
+ */
+function devit_featured_slider() {
+//  if(get_theme_mod('devit_slider_checkbox')):
+      echo '<div class="flexslider">';
+        echo '<ul class="slides">';
+
+          $count = get_theme_mod('devit_slide_number');
+          $slidecat = get_theme_mod('devit_slide_categories');
+
+            if ( $count && $slidecat ) {
+            $query = new WP_Query( array( 'cat' => $slidecat, 'posts_per_page' => $count ) );
+            if ($query->have_posts()) :
+              while ($query->have_posts()) : $query->the_post();
+              echo '<li>';
+                if ( has_post_thumbnail() ) { // Check if the post has a featured image assigned to it.
+                  the_post_thumbnail('full');
+                }
+                echo '<div class="flex-caption custom-caption">';
+                  //echo '<a href="'. get_permalink() .'">';
+                  echo '<div class="text-center">';
+                    if ( get_the_title() != '' ) echo '<h2 class="entry-title">'. get_the_title().'</h2>';
+                    if ( get_the_excerpt() != '' ) echo '<div class="excerpt">' . get_the_excerpt() .'</div>';
+                  echo '</div>';
+                echo '</div>';
+
+                endwhile;
+              endif;
+
+            } else {
+                echo "Slider no configurado...";
+            }
+            echo '</li>';
+        echo '</ul>';
+      echo ' </div>';
+ // endif;
+}
