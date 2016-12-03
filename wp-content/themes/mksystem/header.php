@@ -65,11 +65,19 @@
 		</div>
 	</nav><!-- .site-navigation -->
 
-        <div class="top-section">
+        <div class="">
         <!--slider dazzling
-		<?php dazzling_featured_slider(); ?> -->
+		<?php dazzling_featured_slider(); ?> 
+		<?php dazzling_call_for_action(); ?>-->
+        </div>
+
+        <div class="top-section">
+        <!--slider creado-->
+		<?php devit_featured_slider(); ?>
+		<!-- sin funcionalidad-->
 		<?php dazzling_call_for_action(); ?>
         </div>
+
         <div id="content" class="site-content container">
 
             <div class="container main-content-area"><?php

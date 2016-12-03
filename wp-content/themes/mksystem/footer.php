@@ -19,7 +19,7 @@
 		
 
 				
-				<div class ="footermk text-center"><h6>© New Energy 2016 - Desarrollado por MK System</h6></div>
+				<div class ="footermk text-center"><h6>© Dulcebrysa 2016 - Desarrollado por DevitWeb </h6></div>
 
 				<div class="scroll-to-top"><i class="fa fa-angle-up"></i> </div>
 
