@@ -10,9 +10,10 @@
 get_header(); ?>
 
 
-        <div class="top-section">
-		<?php devit_featured_slider(); ?>
-		</div>
+<div class="top-section">
+	<?php devit_featured_slider(); ?>
+	<?php dazzling_call_for_action(); ?>
+</div>
 
 		
 
