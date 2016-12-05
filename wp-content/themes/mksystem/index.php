@@ -23,8 +23,10 @@ get_header(); ?>
 
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-    <header class="entry-header page-header">
-        <h1 class="entry-title text-center">Organizacion de Eventos</h1>
+    <header class="entry-header page-header container">
+       
+        <h1 style="color:black; text-align: center"><?= get_theme_mod('inicio_titulocentral');?></h1>
+          <h4 style="color:black; text-align: center"><?= get_theme_mod('inicio_subtitulocentral');?></h4>
 
     </header><!-- .entry-header -->
 
@@ -34,14 +36,14 @@ get_header(); ?>
 
 
 
-
+<div class="fondo1">
 
 
  <div class="gServiciosBox">
-        <hr class="gSeparator gSeparatorTrans gSeparator35">
+      
         
         <div class="gFondoGrisOscuro content-block ">
-            <div class="row">   
+            <div class="container">   
                     <?php if(get_theme_mod('inicio_imagen1','') != ''): ?>
 	                    <div class="col-sm-4 col-md-4">
 	                    	
@@ -68,7 +70,7 @@ get_header(); ?>
             </div>
         </div>
         <div class="gFondoGrisClaro content-block">
-            <div class="row">   
+            <div class="container">   
                     <?php if(get_theme_mod('inicio_imagen4','') != ''): ?>
 	                    <div class="col-sm-4 col-md-4">
 	                        <img class="" src="<?= get_theme_mod('inicio_imagen4',''); ?>">
@@ -96,11 +98,12 @@ get_header(); ?>
     
     
     
+</div>
 
 
 </article><!-- #post-## -->
 
-   
+ <div class="fondo2 container">  
 
 
 
@@ -109,7 +112,7 @@ get_header(); ?>
 
         	<div class="col-md-12 ">
         	<div class="mk-eventos2" >
-	        	<div class="mk-img2 col-sm-6 circle">
+	        	<div class="mk-img2 col-md-6 circle">
 
                         <img class="" src="<?= get_theme_mod('inicio_imagen7',''); ?>">
 	        	</div>
@@ -133,6 +136,7 @@ get_header(); ?>
 
 
 
+</div>
 
 
 

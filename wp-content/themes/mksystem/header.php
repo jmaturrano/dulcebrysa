@@ -78,9 +78,9 @@
 		<?php dazzling_call_for_action(); ?>
         </div>
 
-        <div id="content" class="site-content container">
+        <div id="content" class="site-content ">
 
-            <div class="container main-content-area"><?php
+            <div class="main-content-area"><?php
 
                 global $post;
                 if( get_post_meta($post->ID, 'site_layout', true) ){

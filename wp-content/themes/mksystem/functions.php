@@ -96,7 +96,34 @@ function mksystem_customizer_register( $wp_customize ) {
             'priority' => 100
         )
     );
+
+  // titulo central
+  $wp_customize->add_setting('inicio_titulocentral',array(
+    'default' => __('','mksystem')
+  ));
   
+  $wp_customize->add_control('inicio_titulocentral',array(
+    'label' => __('Título central','mksystem'),
+    'section' => 'mksystem_inicio',
+    'setting' => 'inicio_titulocentral',
+    'type'    => 'text'
+  ));
+
+  // subtitulo central
+  $wp_customize->add_setting('inicio_subtitulocentral',array(
+    'default' => __('','mksystem')
+  ));
+  
+  $wp_customize->add_control('inicio_subtitulocentral',array(
+    'label' => __('Subtitulo central','mksystem'),
+    'section' => 'mksystem_inicio',
+    'setting' => 'inicio_subtitulocentral',
+    'type'    => 'text'
+  ));
+
+  
+
+
   // titulo 1
   $wp_customize->add_setting('inicio_titulo1',array(
     'default' => __('','mksystem')
@@ -525,12 +552,15 @@ function devit_featured_slider() {
                 }
                 echo '<div class="flex-caption custom-caption">';
                   //echo '<a href="'. get_permalink() .'">';
-                  echo '<div class="text-center">';
+                /*
+                // se retira porque en mockup no lo pide
+                  echo '<div class="">';
                     if ( get_the_title() != '' ) echo '<h2 class="entry-title">'. get_the_title().'</h2>';
                     if ( get_the_excerpt() != '' ) echo '<div class="excerpt">' . get_the_excerpt() .'</div>';
                   echo '</div>';
+                */
                 echo '</div>';
-
+              
                 endwhile;
               endif;
 
