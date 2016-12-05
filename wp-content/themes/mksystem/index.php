@@ -45,24 +45,39 @@ get_header(); ?>
         <div class="gFondoGrisOscuro content-block ">
             <div class="container">   
                     <?php if(get_theme_mod('inicio_imagen1','') != ''): ?>
-	                    <div class="col-sm-4 col-md-4">
-	                    	
-	                        <img class="" src="<?= get_theme_mod('inicio_imagen1',''); ?>">
-                            <h3 style="color:black; text-align: center"><?= get_theme_mod('inicio_titulo1');?></h3>
+	                    <div class="col-sm-4 col-md-4 block_inicio">
+	                    	<div class="block_color_white">
+
+    	                        <img class="" src="<?= get_theme_mod('inicio_imagen1',''); ?>">
+                                <h3 style="color:black; text-align: center"><?= get_theme_mod('inicio_titulo1');?></h3>
+                                <div class="block_color_bottom">
+                                BOTON
+                                </div>                                
+                            </div>
+
+
 	                    </div>
                     <?php endif; ?>
                     <?php if(get_theme_mod('inicio_imagen2','') != ''): ?>
-	                    <div class="col-sm-4 col-md-4">
-	                    
-	                        <img class="" src="<?= get_theme_mod('inicio_imagen2',''); ?>">
-                            <h3 style="color:black; text-align: center"><?= get_theme_mod('inicio_titulo2');?></h3>
+	                    <div class="col-sm-4 col-md-4 block_inicio">
+	                       <div class="block_color_white">       
+    	                        <img class="" src="<?= get_theme_mod('inicio_imagen2',''); ?>">
+                                <h3 style="color:black; text-align: center"><?= get_theme_mod('inicio_titulo2');?></h3>
+                                <div class="block_color_bottom">
+                                BOTON
+                                </div>  
+                             </div>
 	                    </div>
                     <?php endif; ?>
                     <?php if(get_theme_mod('inicio_imagen3','') != ''): ?>
-	                    <div class="col-sm-4 col-md-4">
-	                   
-	                        <img class="" src="<?= get_theme_mod('inicio_imagen3',''); ?>">
-                            <h3 style="color:black; text-align: center"><?= get_theme_mod('inicio_titulo3');?></h3>
+	                    <div class="col-sm-4 col-md-4 block_inicio">
+    	                   <div class="block_color_white">
+    	                        <img class="" src="<?= get_theme_mod('inicio_imagen3',''); ?>">
+                                <h3 style="color:black; text-align: center"><?= get_theme_mod('inicio_titulo3');?></h3>
+                                <div class="block_color_bottom">
+                                BOTON
+                                </div>                                  
+                            </div>
 	                    </div>
                     <?php endif; ?>
                 
@@ -72,21 +87,36 @@ get_header(); ?>
         <div class="gFondoGrisClaro content-block">
             <div class="container">   
                     <?php if(get_theme_mod('inicio_imagen4','') != ''): ?>
-	                    <div class="col-sm-4 col-md-4">
-	                        <img class="" src="<?= get_theme_mod('inicio_imagen4',''); ?>">
-                            <h3 style="color:black; text-align: center"><?= get_theme_mod('inicio_titulo4');?></h3>
+	                    <div class="col-sm-4 col-md-4 block_inicio">
+                            <div class="block_color_white">                           
+    	                        <img class="" src="<?= get_theme_mod('inicio_imagen4',''); ?>">
+                                <h3 style="color:black; text-align: center"><?= get_theme_mod('inicio_titulo4');?></h3>
+                                <div class="block_color_bottom">
+                                BOTON
+                                </div>  
+                            </div>
 	                    </div>
                     <?php endif; ?>
                     <?php if(get_theme_mod('inicio_imagen5','') != ''): ?>
-	                    <div class="col-sm-4 col-md-4">
-	                        <img class="" src="<?= get_theme_mod('inicio_imagen5',''); ?>">
-                             <h3 style="color:black; text-align: center"><?= get_theme_mod('inicio_titulo5');?></h3>
+	                    <div class="col-sm-4 col-md-4 block_inicio">
+                            <div class="block_color_white">
+    	                        <img class="" src="<?= get_theme_mod('inicio_imagen5',''); ?>">
+                                 <h3 style="color:black; text-align: center"><?= get_theme_mod('inicio_titulo5');?></h3>
+                                <div class="block_color_bottom">
+                                BOTON
+                                </div>  
+                            </div>
 	                    </div>
                     <?php endif; ?>
                     <?php if(get_theme_mod('inicio_imagen6','') != ''): ?>
-	                    <div class="col-sm-4 col-md-4">
-	                        <img class="" src="<?= get_theme_mod('inicio_imagen6',''); ?>">
-                            <h3 style="color:black; text-align: center"><?= get_theme_mod('inicio_titulo6');?></h3>
+	                    <div class="col-sm-4 col-md-4 block_inicio">
+                            <div class="block_color_white">
+    	                        <img class="" src="<?= get_theme_mod('inicio_imagen6',''); ?>">
+                                <h3 style="color:black; text-align: center"><?= get_theme_mod('inicio_titulo6');?></h3>
+                                <div class="block_color_bottom">
+                                BOTON
+                                </div>                                  
+                            </div>                            
 	                    </div>
                     <?php endif; ?>
                 

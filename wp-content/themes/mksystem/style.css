@@ -92,17 +92,9 @@ background-color: #000000;
 }
 
 
-
-
-
-
-
 .gFondoGrisClaro {
 
-
-
     background-color: #4b4b4b;
-
 
 
 }
@@ -127,36 +119,43 @@ background-color: #000000;
     position: absolute;
     top: 0; left: 0;
 }
-/*
-.fondo1{
 
-border: 5px solid red;
-position: absolute!important;
-width: 100%!important;
-top: 60%!important;
-left: 0px!important;
-right: : 0px!important;
-}*/
-/*
-.fondo2{
 
-border: 5px solid red;
-position: absolute!important;
-width: 100%!important;
-top: 80%!important;
-left: 0px!important;
-right: : 0px!important;
+
+
+/* opciones de pag. inicio */
+.block_inicio{
+     
+    padding-top: 15px; 
+    padding-bottom:  6px; 
 }
-*/
-/*
 
-.fondogo{
+.block_color_white{
 
-border: 5px solid red;
-position: absolute!important;
-width: 100%!important;
-height: 300px;
-left: 0px;
-right: 0px;
+ background-color: #efefef;
+
 }
-*/
+
+.block_color_bottom{
+
+ background-color: white;
+ text-align: center;
+ border: 1px solid skyblue;   
+}
+
+
+
+
+
+/* Menu principal-efecto underline */
+.navbar-nav > li > a {
+    /*color: red!important;*/
+    text-decoration: none;
+}
+.navbar-nav > li > a:hover{
+ text-decoration: underline;
+}
+.navbar-nav > li > a:active {
+    text-decoration: underline;
+}
+
